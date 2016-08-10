@@ -6,7 +6,7 @@ TaskApp.config(['$routeProvider', function ($routeProvider) {
         templateUrl: 'views/dashboard/basictable.html',
         controller: 'tableCtrl'
     }).when("/table/dynamic", {
-        templateUrl: 'views/dashboard/table1.html'
+        templateUrl: 'app/pages/tables/table.html'
     }).when("/ui/buttons", {
         templateUrl: 'views/ui-elements/button.html'
     }).when("/ui/notifications", {
