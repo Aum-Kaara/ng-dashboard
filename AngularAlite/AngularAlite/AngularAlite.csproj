@@ -59,16 +59,24 @@
   <ItemGroup>
     <Content Include="app\app.js" />
     <Content Include="app\Controllers\NotificationsPageCtrl.js" />
+    <Content Include="app\Controllers\wizrdCtrl.js" />
     <Content Include="app\Directives\header\header.js" />
     <Content Include="app\Directives\header\header.html" />
     <Content Include="app\Directives\header\templates\template.html" />
     <Content Include="app\Directives\sidebar\sidebar.js" />
     <Content Include="app\Directives\sidebar\sidebar.html" />
+    <Content Include="app\Directives\wizard\baWizard.directive.js" />
+    <Content Include="app\Directives\wizard\baWizard.html" />
+    <Content Include="app\Directives\wizard\baWizardCtrl.js" />
+    <Content Include="app\Directives\wizard\baWizardStep.directive.js" />
+    <Content Include="app\Directives\wizard\baWizardStep.html" />
+    <Content Include="app\pages\forms\wizard.html" />
     <Content Include="app\pages\forms\advanced.html" />
     <Content Include="app\pages\tables\table.html" />
     <Content Include="app\Controllers\table.controllers.js" />
     <Content Include="app\pages\ui\button.html" />
     <Content Include="app\pages\ui\notifications.html" />
+    <Content Include="Content\css\app-bcb3293d10.css" />
     <Content Include="Content\css\AdminLTE.css" />
     <Content Include="Content\css\angular-toastr.css" />
     <Content Include="Content\css\app.min.css" />

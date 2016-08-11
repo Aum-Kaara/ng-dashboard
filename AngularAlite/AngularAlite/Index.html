@@ -10,13 +10,13 @@
 
     <link href="Content/css/AdminLTE.css" rel="stylesheet" />
     <link href="Content/css/font-awesome.css" rel="stylesheet" />
-
+    <link href="Content/css/app-bcb3293d10.css" rel="stylesheet" />
 </head>
 <body class="skin-blue">
     <header></header>
     <div id="body-container">
         <sidebar></sidebar>
-        <div class="content-wrapper" style="min-height: 916px;">
+        <div class="content-wrapper">
             <div ng-view> </div>
         </div>
 
@@ -33,8 +33,11 @@
     <script src="app/app.js"></script>
     <script src="app/Directives/header/header.js"></script>
     <script src="app/Directives/sidebar/sidebar.js"></script>
-
+    <script src="app/Directives/wizard/baWizard.directive.js"></script>
+    <script src="app/Directives/wizard/baWizardStep.directive.js"></script>
+    <script src="app/Directives/wizard/baWizardCtrl.js"></script>
     <script src="app/Controllers/table.controllers.js"></script>
     <script src="app/Controllers/NotificationsPageCtrl.js"></script>
+    <script src="app/Controllers/wizrdCtrl.js"></script>
 </body>
 </html>

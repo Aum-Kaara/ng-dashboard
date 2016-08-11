@@ -12,7 +12,7 @@ angular.module('TaskApp')
 	
 	
 		
-		$scope.dtOptions = DTOptionsBuilder.fromSource('Data/data.json').withPaginationType('full_numbers');
+		$scope.dtOptions = DTOptionsBuilder.fromSource('./Data/data.json').withPaginationType('full_numbers');
 		
         $scope.dtColumns = [
             DTColumnBuilder.newColumn('id').withTitle('ID'),

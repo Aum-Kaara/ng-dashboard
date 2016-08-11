@@ -10,6 +10,8 @@ TaskApp.config(['$routeProvider', function ($routeProvider) {
         templateUrl: 'app/pages/ui/notifications.html'
     }).when('/forms/advanced', {
         templateUrl: 'app/pages/forms/advanced.html'
+    }).when('/forms/wizard', {
+        templateUrl: 'app/pages/forms/wizard.html'
     }).otherwise({ redirectTo: '/table/dynamic' });
 
 }]);
