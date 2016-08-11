@@ -11,7 +11,9 @@ TaskApp.config(['$routeProvider', function ($routeProvider) {
     }).when('/forms/advanced', {
         templateUrl: 'app/pages/forms/advanced.html'
     }).when('/forms/wizard', {
-        templateUrl: 'app/pages/forms/wizard.html'
+        templateUrl: 'app/pages/forms/wizard.html',
+        controller: 'WizardCtrl',
+        controllerAs: 'vm'
     }).otherwise({ redirectTo: '/table/dynamic' });
 
 }]);

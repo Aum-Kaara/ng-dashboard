@@ -71,3 +71,31 @@
     border-top-right-radius: 50px;
     padding-right: 18px;
 }
+.ba-wizard-progress {
+    margin-top: 10px;
+    height: 10px;
+}
+.ba-wizard-pager .previous {
+    float: left;
+}
+.ba-wizard-pager .next {
+    float: right;
+}
+.ba-wizard-navigation-container {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    padding: 15px 0;
+}
+.ba-wizard-navigation-container .ba-wizard-navigation {
+    cursor: pointer;
+    display: table-cell;
+    line-height: 1;
+    text-align: center;
+    font-weight: 300;
+    font-size: 18px;
+    opacity: .7;
+}
+.ba-wizard-navigation-container .ba-wizard-navigation.active {
+    opacity: .95;
+}
