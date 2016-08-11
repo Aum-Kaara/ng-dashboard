@@ -1,0 +1,79 @@
+<div class="" ng-controller="UserController" >
+   <!-- Content Header (Page header) -->
+   <section class="content-header">
+      <h1>
+         Documents<span class="arrow"> > </span><span class="page-subtitle" ng-if="document.id==null">Add New Document</span><span class="page-subtitle" ng-if="document.id!=null">Edit Document</span>
+      </h1>
+
+   </section>
+   <!-- Main content -->
+   <section class="content">
+      <div class="box box-default col-sm-12">
+         <div class="box-header with-border">
+<div class="box-header"><h3>DOCUMENT ID #<span ng-if="document.id==null">{GENERATED ON SAVE}</span><span ng-if="document.id!=0">{{user.UserId}}</span></h3></div>
+         </div>
+         <!-- /.box-header -->
+         <div class="box-body">
+            <div class="row">
+               <form role="form" name="documentForm" novalidate class="">
+<div class="row">
+   <div class="col-sm-6">
+      <div class="form-group">
+         <label>VALUATION REQUEST ID</label>
+         <input type="text" name="ValuationRequestId" placeholder="Valuation Request Id" ng-model="document.ValuationRequestId" required tooltip-is-open="documentForm.ValuationRequestId.$invalid && documentForm.ValuationRequestId.$touched" tooltip-class="tooltip-pink" tooltip-trigger="none"
+            uib-tooltip-template="'ValuationRequestIdTooltipTemplate.html'" class="form-control"/>
+         <script type="text/ng-template" id="ValuationRequestIdTooltipTemplate.html">
+            <span ng-show="documentForm.ValuationRequestId.$error.required">Valuation Request Id is required.</span>
+            
+         </script>
+      </div>
+   </div>
+   <div class="col-sm-6">
+      <div class="form-group">
+         <label>DOCUMENT DETAILS</label>
+		          <input type="text" name="DocumentDetails" placeholder="Document Details Id" ng-model="document.DocumentDetails" required tooltip-is-open="documentForm.DocumentDetails.$invalid && documentForm.DocumentDetails.$touched" tooltip-class="tooltip-pink" tooltip-trigger="none"
+            uib-tooltip-template="'DocumentDetailsTooltipTemplate.html'" class="form-control"/>
+         <script type="text/ng-template" id="DocumentDetailsTooltipTemplate.html">
+            <span ng-show="documentForm.DocumentDetails.$error.required">Document Details is required.</span>
+            
+         </script>
+         
+      </div>
+   </div>
+</div>    
+
+<div class="row">
+   <div class="col-sm-6">
+      <div class="form-group">
+         <label>DOCUMENT RECEIVED TYPE</label>
+         <select class="form-control" selectpicker="" title="Standard Select" ng-model="document.ReceivedType" required tooltip-is-open="documentForm.ReceivedType.$invalid && documentForm.ReceivedType.$touched">
+		 <option class="" data-hidden="true" disabled="" value="" selected="selected">ReceivedType Select</option>
+		 <option label="Option 1" value="object:385">Option 1</option>
+		 <option label="Option 2" value="object:386">Option 2</option>
+		 </select>
+         <script type="text/ng-template" id="ReceivedTypeTooltipTemplate.html">
+            <span ng-show="documentForm.ReceivedType.$error.required">Valuation Request Id is required.</span>
+            
+         </script>
+      </div>
+   </div>
+   <div class="col-sm-6">
+      <div class="form-group">
+        <input checked="" type="checkbox" ng-model="document.IsRequireToSendBack" required tooltip-is-open="documentForm.IsRequireToSendBack.$invalid && documentForm.IsRequireToSendBack.$touched"/>
+		 <label>REQUIRED TO SEND BACK</label>
+               </div>
+   </div>
+</div>
+
+                  <div class="col-sm-12">
+                     <hr>
+                  </div>
+                  <div class="col-sm-12"><button type="submit" ng-click="saveDocument()">SAVE USER</button></div>
+               </form>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- /.content -->
+</div>
+
