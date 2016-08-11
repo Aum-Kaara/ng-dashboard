@@ -3,7 +3,7 @@
 angular.module('TaskApp')
   .directive('sidebar',['$location',function() {
     return {
-      templateUrl:'Directives/sidebar/sidebar.html',
+      templateUrl:'app/Directives/sidebar/sidebar.html',
       restrict: 'E',
       replace: true,
       scope: {

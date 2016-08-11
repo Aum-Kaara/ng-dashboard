@@ -58,18 +58,25 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\app.js" />
+    <Content Include="app\Controllers\table.controllers.js" />
     <Content Include="app\Directives\header\header.js" />
     <Content Include="app\Directives\header\header.html" />
     <Content Include="app\Directives\header\templates\template.html" />
     <Content Include="app\Directives\sidebar\sidebar.js" />
     <Content Include="app\Directives\sidebar\sidebar.html" />
     <Content Include="app\pages\tables\table.html" />
-    <Content Include="Content\angular-toastr.css" />
-    <Content Include="Content\app.min.css" />
-    <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\datatables.bootstrap.min.css" />
-    <Content Include="Content\jquery.dataTables.min.css" />
-    <Content Include="Content\_all-skins.min.css" />
+    <Content Include="app\pages\ui\button.html" />
+    <Content Include="app\pages\ui\notifications.html" />
+    <Content Include="Content\css\AdminLTE.css" />
+    <Content Include="Content\css\angular-toastr.css" />
+    <Content Include="Content\css\app.min.css" />
+    <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\css\datatables.bootstrap.min.css" />
+    <Content Include="Content\css\font-awesome.css" />
+    <Content Include="Content\css\jquery.dataTables.min.css" />
+    <Content Include="Content\css\_all-skins.min.css" />
+    <Content Include="Content\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Index.html" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-datatables.bootstrap.js" />
@@ -86,6 +93,20 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\fonts\FontAwesome.otf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="app\Data\Contacts.json" />
+    <Content Include="app\Data\data.json" />
+    <Content Include="app\Data\inbox.json" />
+    <None Include="Properties\PublishProfiles\Angular-Alite - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\Angular-Alite - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -93,9 +114,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="app\Controllers\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
