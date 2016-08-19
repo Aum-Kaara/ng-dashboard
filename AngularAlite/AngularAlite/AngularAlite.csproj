@@ -73,6 +73,10 @@
     <Content Include="app\Directives\wizard\baWizardCtrl.js" />
     <Content Include="app\Directives\wizard\baWizardStep.directive.js" />
     <Content Include="app\Directives\wizard\baWizardStep.html" />
+    <Content Include="app\pages\forms\Basic.html" />
+    <Content Include="app\pages\forms\Elements.html" />
+    <Content Include="app\pages\forms\formstandard.html" />
+    <Content Include="app\pages\forms\validation.html" />
     <Content Include="app\pages\forms\wizard.html" />
     <Content Include="app\pages\forms\advanced.html" />
     <Content Include="app\pages\samplepages\login.html" />
