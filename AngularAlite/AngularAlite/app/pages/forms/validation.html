@@ -1,0 +1,120 @@
+<div class="widgets">
+	<section class="content-header">
+		<h1>
+            Forms
+			<small>Angular Validation</small>
+		</h1>
+		<ol class="breadcrumb">
+			<li>
+				<a href="#">
+					<i class="fa fa-dashboard"/> Home</a>
+			</li>
+			<li>
+				<a href="#">Forms</a>
+			</li>
+			<li class="active">Validation</li>
+		</ol>
+	</section>
+	<section class="content">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="box box-primary">
+					<form name="form.formValidate" ng-submit="form.submitForm()" novalidate="" class="ng-submitted" style="">
+						<div class="box-header with-border">
+							<div class="box-header">
+								<h3> ANGULAR VALIDATION
+								</h3>
+							</div>
+						</div>
+						<div class="box-body">
+
+							<fieldset>
+								<div class="form-group">
+									<label class="col-sm-2 control-label">Required Input</label>
+									<div class="col-sm-6">
+										<input name="sometext" required="" ng-model="sometext" class="form-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" type="text">
+											<span ng-show="form.validateInput('sometext', 'required')" class="text-danger" style="">This input is required</span>
+										</div>
+										<div class="col-sm-4">
+											<small class="text-muted">required</small>
+										</div>
+									</div>
+								</fieldset>
+								<br>
+									<fieldset>
+										<div class="form-group">
+											<label class="col-sm-2 control-label">User Email</label>
+											<div class="col-sm-6">
+												<input placeholder="mail@example.com" name="email" required="" ng-model="email" class="form-control ng-pristine ng-untouched ng-empty ng-valid-email ng-invalid ng-invalid-required" type="email">
+													<span ng-show="form.validateInput('email', 'required')" class="text-danger" style="">This field is required</span>
+													<span ng-show="form.validateInput('email', 'email')" class="text-danger ng-hide">This field must be a valid email address</span>
+												</div>
+												<div class="col-sm-4">
+													<small class="text-muted">type='email'</small>
+												</div>
+											</div>
+										</fieldset>
+
+
+									</div>
+									<div class="box-footer text-center">
+										<button class="btn btn-info" type="submit">Run validation</button>
+									</div>
+								</form>
+							</div>
+
+							<div class="box box-primary">
+								<form name="form.userForm" ng-submit="form.saveUser()" novalidate="" class="ng-submitted" style="">
+									<div class="box-header with-border">
+										<div class="box-header">
+											<h3> UI TOOLTIP VALIDATION
+											</h3>
+										</div>
+									</div>
+									<div class="box-body">
+										<fieldset>
+
+											<div class="form-group">
+												<label class="col-sm-2 control-label">
+													<i class="fa fa-user" aria-hidden="true"/>USER NAME (Email Address)</label>
+												<div class="col-sm-6">
+													<input type="text" name="userName" class="form-control" placeholder="User Name" ng-model="user.UserName" custom-autofocus="focusUserName" required ng-pattern=""
+                                       tooltip-is-open="form.userForm.userName.$invalid && form.userForm.userName.$touched" tooltip-class="tooltip-pink" tooltip-trigger="none"
+                                       uib-tooltip-template="'userNameTooltipTemplate.html'">
+														<script type="text/ng-template" id="userNameTooltipTemplate.html">
+															<span ng-show="form.userForm.userName.$error.required">User Name is required.</span>
+
+														</script>
+													</div>
+													<div class="col-sm-4">
+														<small class="text-muted">required</small>
+													</div>
+												</div>
+											</fieldset>
+											<br>
+												<fieldset>
+
+													<div class="form-group" ng-class="{ 'has-error': form.userForm.url.$invalid && form.userForm.url.$touched }">
+														<label class="col-sm-2 control-label">Url</label>
+														<div class="col-sm-6">
+															<input name="url" required="" ng-model="url" placeholder="protocol://" class="form-control ng-pristine ng-untouched ng-empty ng-valid-url ng-invalid ng-invalid-required" type="url">
+
+															</div>
+															<div class="col-sm-4">
+																<small class="text-muted">type='url'</small>
+															</div>
+														</div>
+													</fieldset>
+
+												</div>
+												<div class="box-footer text-center">
+													<button class="btn btn-info" type="submit">Run validation</button>
+												</div>
+											</form>
+										</div>
+
+									</div>
+								</div>
+
+							</section>
+						</div>
