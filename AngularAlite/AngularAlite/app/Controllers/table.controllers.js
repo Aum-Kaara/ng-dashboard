@@ -18,7 +18,6 @@ angular.module('TaskApp')
             DTColumnBuilder.newColumn('id').withTitle('ID'),
             DTColumnBuilder.newColumn('ValuationRequestId').withTitle('Valuation RequestId'),
             DTColumnBuilder.newColumn('DocumentDetails').withTitle('Details'),
-			
 			DTColumnBuilder.newColumn('DocumentReceivedType').withTitle('ReceivedType'),
 			DTColumnBuilder.newColumn('IsRequireToSendBack').withTitle('SendBack'),
 			DTColumnBuilder.newColumn('DocumentLocation').withTitle('Document Location'),

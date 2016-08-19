@@ -1,0 +1,39 @@
+<div>
+	<!-- Content Header (Page header) -->
+	<section class="content-header">
+		<h1>
+            Form Elements
+		</h1>
+	</section>
+	<!-- Main content -->
+	<section class="content">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="box box-default col-sm-12">
+					<div class="box-header with-border">
+						<div class="box-header">
+							<h3>Datepicker Popup</h3>
+						</div>
+					</div>
+					<!-- /.box-header -->
+					<div class="box-body">
+						<div class="row">
+							<div class="col-md-6">
+								<p class="input-group">
+									<input type="text" class="form-control" uib-datepicker-popup="dd.MM.yyyy" ng-model="vm.dt" is-open="vm.popup1.opened" datepicker-options="vm.dateOptions" popup-placement="bottom" ng-required="true" close-text="Close" alt-input-formats="vm.altInputFormats" />
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default" ng-click="vm.open1()">
+											<i class="glyphicon glyphicon-calendar"/>
+										</button>
+									</span>
+								</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /.content -->
+	</div>
+	

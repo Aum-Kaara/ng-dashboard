@@ -99,3 +99,9 @@
 .ba-wizard-navigation-container .ba-wizard-navigation.active {
     opacity: .95;
 }
+.tooltip.tooltip-pink .tooltip-inner {
+        background-color: #FF0000 !important;
+        }
+ .tooltip.tooltip-pink .tooltip-arrow {
+          border-top-color: #FF0000 !important;
+        }
