@@ -58,9 +58,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\app.js" />
+    <Content Include="app\Controllers\FormElementsController.js" />
+    <Content Include="app\Controllers\FormValidationController.js" />
     <Content Include="app\Controllers\NotificationsPageCtrl.js" />
     <Content Include="app\Controllers\DataTableController.js" />
+    <Content Include="app\Controllers\OrdersTableCtrl.js" />
+    <Content Include="app\Controllers\ProductsTableCtrl.js" />
     <Content Include="app\Controllers\wizrdCtrl.js" />
+    <Content Include="app\Directives\charts\morrisAreaGraph.js" />
     <Content Include="app\Directives\header\header.js" />
     <Content Include="app\Directives\header\header.html" />
     <Content Include="app\Directives\header\templates\template.html" />
@@ -71,8 +76,17 @@
     <Content Include="app\Directives\wizard\baWizardCtrl.js" />
     <Content Include="app\Directives\wizard\baWizardStep.directive.js" />
     <Content Include="app\Directives\wizard\baWizardStep.html" />
+    <Content Include="app\pages\AppView\Orders.html" />
+    <Content Include="app\pages\AppView\Products.html" />
+    <Content Include="app\pages\charts\Morris.html" />
     <Content Include="app\pages\forms\wizard.html" />
     <Content Include="app\pages\forms\advanced.html" />
+    <Content Include="app\pages\inbox.html" />
+    <Content Include="app\pages\samplepages\404.html" />
+    <Content Include="app\pages\samplepages\500.html" />
+    <Content Include="app\pages\samplepages\blank.html" />
+    <Content Include="app\pages\samplepages\login.html" />
+    <Content Include="app\pages\samplepages\register.html" />
     <Content Include="app\pages\tables\basictable.html" />
     <Content Include="app\pages\tables\datatable.html" />
     <Content Include="app\pages\tables\table.html" />
@@ -91,6 +105,9 @@
     <Content Include="Content\css\jquery.dataTables.min.css" />
     <Content Include="Content\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\plugins\morris\morris.css" />
+    <Content Include="Content\plugins\morris\morris.js" />
+    <Content Include="Content\plugins\morris\morris.min.js" />
     <Content Include="Index.html" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-datatables.bootstrap.js" />
@@ -101,8 +118,9 @@
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jQuery-2.1.3.min.js" />
+    <Content Include="Scripts\jquery.dataTables.columnFilter.js" />
     <Content Include="Scripts\jquery.dataTables.js" />
-    <Content Include="Scripts\ui-bootstrap-tpls-0.14.3.min.js" />
+    <Content Include="Scripts\ui-bootstrap-tpls-2.0.2.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -122,6 +140,10 @@
     <Content Include="Data\data.json" />
     <Content Include="Data\inbox.json" />
     <Content Include="Data\datatable.json" />
+    <Content Include="app\Data\Contacts.json" />
+    <Content Include="app\Data\data.json" />
+    <Content Include="app\Data\datatables.standard.json" />
+    <Content Include="app\Data\inbox.json" />
     <None Include="Properties\PublishProfiles\Angular-Alite - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\Angular-Alite - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\Angular-Alite.pubxml" />
