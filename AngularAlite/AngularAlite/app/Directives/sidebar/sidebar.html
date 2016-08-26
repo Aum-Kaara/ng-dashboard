@@ -1,95 +1,193 @@
 <div class="main-sidebar">
-    <!-- sidebar: style can be found in sidebar.less -->
-    <section class="sidebar">
-        <!-- Sidebar user panel -->
-        <!-- search form -->
-        <form action="#" method="get" class="sidebar-form">
-            <div class="input-group">
-                <input type="text" name="q" class="form-control" placeholder="Search...">
-                <span class="input-group-btn">
-                    <button type="submit" name="search" id="search-btn" class="btn btn-flat">
-                        <i class="fa fa-search"></i>
-                    </button>
-                </span>
-            </div>
-        </form>
-        <!-- /.search form -->
-        <!-- sidebar menu: : style can be found in sidebar.less -->
-        <ul class="sidebar-menu">
-            <li class="header">MAIN NAVIGATION</li>
-            <li class="active treeview">
-                <a href="#" data-toggle="collapse" data-target="#sidebar-table" class="collapsed" aria-expanded="false">
-                    <i class="fa fa-dashboard"></i> <span>Dashboard</span>
-                    <span class="pull-right-container">
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </span>
-                </a>
-                <ul class="collapse" id="sidebar-table" aria-expanded="false">
-                    <li class="active"><a href="#/table/dynamic"><i class="fa fa-circle-o"></i>List Document</a></li>
-                    <li><a href="#/forms/advanced"><i class="fa fa-circle-o"></i> Create New Document</a></li>
-                </ul>
-            </li>
-            <li class="treeview">
-                <a data-toggle="collapse" data-target="#sidebar-ui" class="collapsed" aria-expanded="false">
-                    <i class="fa fa-laptop"></i>
-                    <span>UI Elements</span>
-                    <span class="pull-right-container">
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </span>
-                </a>
-                <ul class="collapse" id="sidebar-ui" aria-expanded="false">
+	<!-- sidebar: style can be found in sidebar.less -->
+	<section class="sidebar">
+		<!-- Sidebar user panel -->
+		<!-- search form -->
+		<form action="#" method="get" class="sidebar-form">
+			<div class="input-group">
+				<input type="text" name="q" class="form-control" placeholder="Search...">
+					<span class="input-group-btn">
+						<button type="submit" name="search" id="search-btn" class="btn btn-flat">
+							<i class="fa fa-search"/>
+						</button>
+					</span>
+				</div>
+			</form>
+			<!-- /.search form -->
+			<!-- sidebar menu: : style can be found in sidebar.less -->
+			<ul class="sidebar-menu">
+				<li class="header">MAIN NAVIGATION</li>
+				<li class="active treeview">
+					<a href="#" data-toggle="collapse" data-target="#sidebar-table" class="collapsed" aria-expanded="false">
+						<i class="fa fa-dashboard"/>
+						<span>Dashboard</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"/>
+						</span>
+					</a>
+					<ul class="collapse" id="sidebar-table" aria-expanded="false">
+						<li class="active">
+							<a href="#/table/dynamic">
+								<i class="fa fa-circle-o"/>List Document</a>
+						</li>
+						<li>
+							<a href="#/forms/advanced">
+								<i class="fa fa-circle-o"/> Create New Document</a>
+						</li>
+					</ul>
+				</li>
+				<li class="treeview">
+					<a href="#/outlook" data-toggle="collapse" class="collapsed" aria-expanded="false">
+						<i class="fa fa-inbox"/>
+						<span>Outlook</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"/>
+						</span>
+					</a>
 
-                    <li><a href="#/ui/buttons"><i class="fa fa-circle-o"></i> Buttons</a></li>
-                    <li><a href="#/ui/notifications"><i class="fa fa-circle-o"></i> Notification</a></li>
+				</li>
+				<li class="treeview">
+					<a data-toggle="collapse" data-target="#sidebar-ui" class="collapsed" aria-expanded="false">
+						<i class="fa fa-laptop"/>
+						<span>UI Elements</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"/>
+						</span>
+					</a>
+					<ul class="collapse" id="sidebar-ui" aria-expanded="false">
 
-                </ul>
-            </li>
-            <li class="treeview">
-                <a data-toggle="collapse" data-target="#sidebar-Forms" class="collapsed" aria-expanded="false" href="#/forms/wizard">
-                    <i class="fa fa-edit"></i>
-                    <span>Forms</span>
-                    <span class="pull-right-container">
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </span>
-                </a>
-                <ul class="collapse" id="sidebar-Forms" aria-expanded="false">
-                    <li><a href="#/forms/wizard"><i class="fa fa-circle-o"> </i> Form Wizard</a></li>
-                    <li><a href="#/forms/validation"><i class="fa fa-circle-o"> </i> Form Validation</a></li>
-					<li><a href="#/forms/Basic"><i class="fa fa-circle-o"></i> Basic Form</a></li>
-					<li><a href="#/forms/Elements"><i class="fa fa-circle-o"> </i> Form Elements</a></li>
-                </ul>
-            </li>
-            <li class="treeview">
-                <a data-toggle="collapse" data-target="#sidebar-tables" class="collapsed" aria-expanded="false" href="#/table/basic">
-                    <i class="fa fa-table"> </i>
-                    <span>Tables</span>
-                    <span class="pull-right-container">
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </span>
-                </a>
-                <ul class="collapse" id="sidebar-tables" aria-expanded="false">
-                    <li><a href="#/table/basic"><i class="fa fa-circle-o"> </i> Basic Tables</a></li>
-                    <li><a href="#/table/dynamic"><i class="fa fa-circle-o"> </i> Datatables</a></li>
-                    <li><a href="#/table/datatable"><i class="fa fa-circle-o"> </i> Data Tables</a></li>
-                </ul>
-            </li>
-			            <li class="treeview">
-                <a data-toggle="collapse" data-target="#sidebar-Pages" class="collapsed" aria-expanded="false" href="">
-                    <i class="fa fa-file"> </i>
-                    <span>Pages</span>
-                    <span class="pull-right-container">
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </span>
-                </a>
-                <ul class="collapse" id="sidebar-Pages" aria-expanded="false">
-                    <li><a href="app/pages/samplepages/login.html"><i class="fa fa-circle-o"> </i>Login</a></li>\app\pages\samplepages
-                    
-                </ul>
-            </li>
+						<li>
+							<a href="#/ui/buttons">
+								<i class="fa fa-circle-o"/> Buttons</a>
+						</li>
+						<li>
+							<a href="#/ui/notifications">
+								<i class="fa fa-circle-o"/> Notification</a>
+						</li>
+
+					</ul>
+				</li>
+				<li class="treeview">
+					<a data-toggle="collapse" data-target="#sidebar-Charts" class="collapsed" aria-expanded="false">
+						<i class="fa fa-lg fa-fw fa-bar-chart-o"/>
+						<span>Charts</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"/>
+						</span>
+					</a>
+					<ul class="collapse" id="sidebar-Charts" aria-expanded="false">
+
+						<li>
+							<a href="#/Charts/Morris">
+								<i class="fa fa-circle-o"/> Morris</a>
+						</li>
 
 
+					</ul>
+				</li>
+				<li class="treeview">
+					<a data-toggle="collapse" data-target="#sidebar-Forms" class="collapsed" aria-expanded="false" href="#/forms/wizard">
+						<i class="fa fa-edit"/>
+						<span>Forms</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"/>
+						</span>
+					</a>
+					<ul class="collapse" id="sidebar-Forms" aria-expanded="false">
+						<li>
+							<a href="#/forms/wizard">
+								<i class="fa fa-circle-o"> </i> Form Wizard</a>
+						</li>
+						<li>
+							<a href="#/forms/validation">
+								<i class="fa fa-circle-o"> </i> Form Validation</a>
+						</li>
+						<li>
+							<a href="#/forms/Basic">
+								<i class="fa fa-circle-o"/> Basic Form</a>
+						</li>
+						<li>
+							<a href="#/forms/Elements">
+								<i class="fa fa-circle-o"> </i> Form Elements</a>
+						</li>
+					</ul>
+				</li>
+				<li class="treeview">
+					<a data-toggle="collapse" data-target="#sidebar-tables" class="collapsed" aria-expanded="false" href="#/table/basic">
+						<i class="fa fa-table"> </i>
+						<span>Tables</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"/>
+						</span>
+					</a>
+					<ul class="collapse" id="sidebar-tables" aria-expanded="false">
+						<li>
+							<a href="#/table/basic">
+								<i class="fa fa-circle-o"> </i> Basic Tables</a>
+						</li>
+						<li>
+							<a href="#/table/dynamic">
+								<i class="fa fa-circle-o"> </i> Datatables</a>
+						</li>
 
-        </ul>
-    </section>
-    <!-- /.sidebar -->
-</div>
+					</ul>
+				</li>
+				<li class="treeview">
+					<a data-toggle="collapse" data-target="#sidebar-Pages" class="collapsed" aria-expanded="false" href="">
+						<i class="fa fa-file"> </i>
+						<span>Pages</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"/>
+						</span>
+					</a>
+					<ul class="collapse" id="sidebar-Pages" aria-expanded="false">
+						<li>
+							<a href="app/pages/samplepages/login.html">
+								<i class="fa fa-circle-o"> </i> Login</a>
+						</li>
+						<li>
+							<a href="app/pages/samplepages/register.html">
+								<i class="fa fa-circle-o"> </i> Register</a>
+						</li>
+						<li>
+							<a href="#/samplepages/404">
+								<i class="fa fa-circle-o"> </i> 404 Page Not Found</a>
+						</li>
+						<li>
+							<a href="#/samplepages/500">
+								<i class="fa fa-circle-o"> </i> 500 Error</a>
+						</li>
+						<li>
+							<a href="#/samplepages/blank">
+								<i class="fa fa-circle-o"> </i> Blank Page</a>
+						</li>
+
+					</ul>
+				</li>
+				<li class="treeview">
+					<a data-toggle="collapse" data-target="#sidebar-AppView" class="collapsed" aria-expanded="false" href="">
+						<i class="fa fa-puzzle-piece"> </i>
+						<span>App View</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"/>
+						</span>
+					</a>
+					<ul class="collapse" id="sidebar-AppView" aria-expanded="false">
+						<li>
+							<a href="#/AppView/Products">
+								<i class="fa fa-gift"> </i> Products</a>
+						</li>
+						<li>
+							<a href="#/AppView/Orders">
+								<i class="fa fa-shopping-cart"> </i> Orders</a>
+						</li>
+
+
+					</ul>
+				</li>
+
+
+			</ul>
+		</section>
+		<!-- /.sidebar -->
+	</div>

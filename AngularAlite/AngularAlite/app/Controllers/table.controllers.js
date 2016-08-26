@@ -1,46 +1,23 @@
 // create the controller and inject Angular's $scope
 angular.module('TaskApp')
 .controller('tableCtrl', ['$scope','$http','DTOptionsBuilder','DTColumnBuilder',function ($scope, $http, DTOptionsBuilder, DTColumnBuilder) {
-		
-		
-		$scope.DocDetails = {};
-        $http.get('Data/data.json').success(function(data) {
-            $scope.DocDetails = data;
-		});
-		$scope.users = {}; 
-
-	
-	
-		
-		$scope.dtOptions = DTOptionsBuilder.fromSource('./Data/data.json').withPaginationType('full_numbers');
-		
-        $scope.dtColumns = [
-            DTColumnBuilder.newColumn('id').withTitle('ID'),
-            DTColumnBuilder.newColumn('ValuationRequestId').withTitle('Valuation RequestId'),
-            DTColumnBuilder.newColumn('DocumentDetails').withTitle('Details'),
-			DTColumnBuilder.newColumn('DocumentReceivedType').withTitle('ReceivedType'),
-			DTColumnBuilder.newColumn('IsRequireToSendBack').withTitle('SendBack'),
-			DTColumnBuilder.newColumn('DocumentLocation').withTitle('Document Location'),
-			DTColumnBuilder.newColumn('SubmittedTo').withTitle('Submitted To'),
-			DTColumnBuilder.newColumn('SubmittedDateTime').withTitle('Submitted DateTime'),
-			DTColumnBuilder.newColumn('SubmitReceiveType').withTitle('Submit ReceiveType'),
 			
-        ];
-		
-		$scope.dtColumns.push(DTColumnBuilder.newColumn(null).withTitle('').withClass('pull-right').notSortable().renderWith(actionsHtml));
-		function actionsHtml(data, type, full, meta) {
-		
-        $scope.DocDetails[data.id] = data;
-        return '<a href="#" ng-click="viewUser(users[' + data.id + '])"><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i></a><button ng-click="deleteSection()"><i class="fa fa-trash-o fa-2x" aria-hidden="true"></i></button>';
-		}
-		
-		$scope.deleteSection = function () {
-			console.log('deleteSection');
-      
-    }
-		
-		
-	
-	
+			this.dtOptions = DTOptionsBuilder
+        .fromSource('app/Data/datatables.standard.json')
+         //Add Bootstrap compatibility
+        .withDOM("<'dt-toolbar'<'col-xs-12 col-sm-6'f><'col-sm-6 col-xs-12 hidden-xs'l>r>" +
+            "t" +
+            "<'dt-toolbar-footer'<'col-sm-6 col-xs-12 hidden-xs'i><'col-xs-12 col-sm-6'p>>")
+        .withBootstrap();
+    this.dtColumns = [
+        DTColumnBuilder.newColumn('id').withClass('text-danger'),
+        DTColumnBuilder.newColumn('name'),
+        DTColumnBuilder.newColumn('phone'),
+        DTColumnBuilder.newColumn('company'),
+        DTColumnBuilder.newColumn('zip'),
+        DTColumnBuilder.newColumn('city'),
+        DTColumnBuilder.newColumn('date')
+    ];
+
     
 }]);// end TabsDemoCtrl

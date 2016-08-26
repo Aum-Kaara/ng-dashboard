@@ -13,17 +13,19 @@
 
     <link href="Content/css/style.css" rel="stylesheet" />
 </head>
-<body class="skin-blue">
-    <header></header>
+<body class="skin-blue" data-ng-class="{ 'sidebar-collapse' : app.layout.isCollapsed }">
+    <header></header> <sidebar></sidebar>
     <div id="body-container">
-        <sidebar></sidebar>
-        <div class="content-wrapper">
+       
+        <div  class="content-wrapper">
             <div ng-view> </div>
         </div>
 
     </div>
     <script src="Scripts/jQuery-2.1.3.min.js"></script>
     <script src="Scripts/jquery.dataTables.js"></script>
+	<script src="Scripts/jquery.dataTables.columnFilter.js"></script>
+	
     <script src="Scripts/angular.min.js"></script>
     <script src="Scripts/angular-animate.min.js"></script>
     <script src="Scripts/angular-route.min.js"></script>
@@ -39,10 +41,12 @@
     <script src="app/Directives/wizard/baWizard.directive.js"></script>
     <script src="app/Directives/wizard/baWizardStep.directive.js"></script>
     <script src="app/Directives/wizard/baWizardCtrl.js"></script>
+	<script src="app/Directives/charts/morrisAreaGraph.js"></script>
     <script src="app/Controllers/table.controllers.js"></script>
     <script src="app/Controllers/NotificationsPageCtrl.js"></script>
     <script src="app/Controllers/wizrdCtrl.js"></script>
-    <script src="app/Controllers/DataTableController.js"></script>
+    <script src="app/Controllers/ProductsTableCtrl.js"></script>
+	 <script src="app/Controllers/OrdersTableCtrl.js"></script>
 	<script src="app/Controllers/FormValidationController.js"></script>
 	<script src="app/Controllers/FormElementsController.js"></script>
 	

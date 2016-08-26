@@ -6,8 +6,6 @@ TaskApp.config(['$routeProvider', function ($routeProvider) {
         templateUrl: 'app/pages/tables/table.html'
     }).when("/table/basic", {
         templateUrl: 'app/pages/tables/basictable.html'
-    }).when("/table/datatable", {
-        templateUrl: 'app/pages/tables/datatable.html'
     }).when("/ui/buttons", {
         templateUrl: 'app/pages/ui/button.html'
     }).when("/ui/notifications", {
@@ -28,6 +26,20 @@ TaskApp.config(['$routeProvider', function ($routeProvider) {
         templateUrl: 'app/pages/forms/validation.html',
         controller: 'FormValidationController',
         controllerAs: 'form'
+    }).when('/samplepages/404', {
+        templateUrl: 'app/pages/samplepages/404.html'
+    }).when('/samplepages/500', {
+        templateUrl: 'app/pages/samplepages/500.html'
+    }).when('/samplepages/blank', {
+        templateUrl: 'app/pages/samplepages/blank.html'
+    }).when('/outlook', {
+        templateUrl: 'app/pages/inbox.html'
+    }).when('/Charts/Morris', {
+        templateUrl: 'app/pages/charts/Morris.html'
+    }).when('/AppView/Products', {
+        templateUrl: 'app/pages/AppView/Products.html'
+    }).when('/AppView/Orders', {
+        templateUrl: 'app/pages/AppView/Orders.html'
     }).otherwise({ redirectTo: '/table/dynamic' });
 
 }]);

@@ -58,8 +58,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\app.js" />
-    <Content Include="app\Controllers\FormElementsController.js" />
-    <Content Include="app\Controllers\FormValidationController.js" />
     <Content Include="app\Controllers\NotificationsPageCtrl.js" />
     <Content Include="app\Controllers\DataTableController.js" />
     <Content Include="app\Controllers\wizrdCtrl.js" />
@@ -73,13 +71,8 @@
     <Content Include="app\Directives\wizard\baWizardCtrl.js" />
     <Content Include="app\Directives\wizard\baWizardStep.directive.js" />
     <Content Include="app\Directives\wizard\baWizardStep.html" />
-    <Content Include="app\pages\forms\Basic.html" />
-    <Content Include="app\pages\forms\Elements.html" />
-    <Content Include="app\pages\forms\formstandard.html" />
-    <Content Include="app\pages\forms\validation.html" />
     <Content Include="app\pages\forms\wizard.html" />
     <Content Include="app\pages\forms\advanced.html" />
-    <Content Include="app\pages\samplepages\login.html" />
     <Content Include="app\pages\tables\basictable.html" />
     <Content Include="app\pages\tables\datatable.html" />
     <Content Include="app\pages\tables\table.html" />
@@ -110,7 +103,6 @@
     <Content Include="Scripts\jQuery-2.1.3.min.js" />
     <Content Include="Scripts\jquery.dataTables.js" />
     <Content Include="Scripts\ui-bootstrap-tpls-0.14.3.min.js" />
-    <Content Include="Scripts\ui-bootstrap-tpls-2.0.2.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -130,9 +122,6 @@
     <Content Include="Data\data.json" />
     <Content Include="Data\inbox.json" />
     <Content Include="Data\datatable.json" />
-    <Content Include="app\Data\Contacts.json" />
-    <Content Include="app\Data\data.json" />
-    <Content Include="app\Data\inbox.json" />
     <None Include="Properties\PublishProfiles\Angular-Alite - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\Angular-Alite - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\Angular-Alite.pubxml" />

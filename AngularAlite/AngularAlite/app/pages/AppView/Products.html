@@ -1,0 +1,62 @@
+<div>
+	<!-- Content Header (Page header) -->
+	<section class="content-header">
+		<h1>
+
+		</h1>
+	</section>
+	<!-- Main content -->
+	<section class="content">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="box box-default col-sm-12">
+					<div class="box-header with-border">
+                        Box Header
+					</div>
+					<!-- /.box-header -->
+					<div class="box-body">
+						<div class="tile-body" ng-controller="ProductsTableCtrl as showCase">
+							<table datatable="ng" dt-options="showCase.dtOptions"
+ dt-column-defs="showCase.dtColumnDefs" class="table table-striped table-hover table-custom" style="min-width
+: 1000px">
+							<thead>
+								<tr>
+									<th style="width:40px">
+										<label class="checkbox checkbox-custom checkbox-custom-sm
+ m-0">
+											<input type="checkbox" ng-model="showCase.selectedAll" ng-click="showCase.selectAll()">
+												<i>
+												</i
+>
+											</label>
+											<th style="width:90px">Product ID <th>Product Name <th>Category <th style="width:80px">Price
+															<th style="width:160px">Date Created <th style="width:90px">Status <th style="width:150px">Actions 
+																	
+																												<tbody>
+																													<tr ng-repeat="product in showCase.products">
+																														<td>
+																															<label class="checkbox checkbox-custom checkbox-custom-sm m-0">
+																																<input type="checkbox" ng-model="product.selected">
+																																	<i/>
+																																</label>
+																																<td>{{ product.id }} <td>{{ product
+.name }} <td>{{ product.category }} <td>{{ product.price | currency }} <td>{{ product.date | date:'mediumDate'
+}} <td>
+																																						<span class="label" ng-class="{'bg-success' : product.status == 'published','bg-warning' : product
+.status == 'not published','bg-lightred' : product.status == 'deleted'}">{{ product.status }}</span>
+																																						<td>
+																																							<a ui-sref="app.shop.single-product" class="btn btn-xs btn-default">
+																																								<i class="fa fa-search">
+																																								</i
+> View</a> <a href="javascript:;" class="btn btn-xs btn-lightred">
+																																								<i class="fa fa-times"/> Delete
+																																							</a>
+																																						</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /.content -->
+</div>
