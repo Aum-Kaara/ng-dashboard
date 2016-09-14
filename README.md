@@ -7,4 +7,21 @@ Angular dashboard with bootstrap
 You can check out a live sample of the dashbaord [clicking here](http://angular-alite.azurewebsites.net)
 
 # Features
-* Form Wizard
+    Fully responsive
+    Bootstrap3
+    Angular JS
+    UI components
+    Mail pages
+    E-commerce pages
+    Easy to use
+    Developers friendly code
+    Documentation included
+    And much more…
+
+# Pages 
+
+  DashBoard
+  Charts 
+    *NVD3
+    *Chart.js
+    *Morris
