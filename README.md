@@ -21,7 +21,7 @@ You can check out a live sample of the dashbaord [clicking here](http://angular-
 # Pages 
 
   DashBoard
-  Charts 
-    *NVD3
-    *Chart.js
-    *Morris
+  Charts
+  -NVD3
+  -Chart.js
+  -Morris
